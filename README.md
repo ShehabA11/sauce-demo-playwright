@@ -74,18 +74,7 @@ test.beforeEach(async ({ page }) => {
 
 Ensure base URL is correct (https://www.saucedemo.com/).
 
-2. Why Test Case 4 (Remove Products from Listing Page) was skipped?
-
-The reason we didn’t implement the “Remove Products from Product Listing Page” test case is because it conflicts with the E2E flow designed for this assignment:
-
-Main E2E scenario:
-Login → Add Product → Go to Cart → Checkout → Cancel → Remove from Cart → Logout
-
-If we remove the product directly from the Inventory Page, the Cart Page will already be empty, breaking the E2E scenario.
-
-This test case can be implemented separately as an independent test outside the main E2E scenario.
-
-3. Why Test Case "Empty Cart Checkout" was skipped?
+2. Why Test Case "Empty Cart Checkout" was skipped?
 
 The Empty Cart Checkout test case was not implemented because:
 
